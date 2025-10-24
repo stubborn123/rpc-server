@@ -30,6 +30,7 @@ func LifecycleCmd(fn LifecycleAction) cli.ActionFunc {
 
 type waitSignalFn func(ctx context.Context, signals ...os.Signal)
 
+// 一个error类型的interruptErr全局变量，采用的是New方式创建的
 var interruptErr = errors.New("interrupt signal")
 
 func lifecycleCmd(fn LifecycleAction, blockOnInterrupt waitSignalFn) cli.ActionFunc {
