@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/the-web3/rpc-server/common/opio"
 	"os"
+	"rpc-server/common/opio"
 )
 
 //TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
